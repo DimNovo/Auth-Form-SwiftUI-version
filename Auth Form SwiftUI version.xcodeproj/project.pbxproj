@@ -11,6 +11,14 @@
 		74DC98BC25F954F50008B291 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DC98BB25F954F50008B291 /* ContentView.swift */; };
 		74DC98BE25F954F80008B291 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74DC98BD25F954F80008B291 /* Assets.xcassets */; };
 		74DC98C125F954F80008B291 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74DC98C025F954F80008B291 /* Preview Assets.xcassets */; };
+		74DC98D025F955470008B291 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DC98CF25F955470008B291 /* UserViewModel.swift */; };
+		74DC98D425F955530008B291 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DC98D325F955530008B291 /* LoginViewModel.swift */; };
+		74DC98D725F955650008B291 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DC98D625F955650008B291 /* RegisterViewModel.swift */; };
+		74DC98DA25F9556E0008B291 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DC98D925F9556E0008B291 /* User.swift */; };
+		74DC98DD25F9557A0008B291 /* CustomAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DC98DC25F9557A0008B291 /* CustomAlert.swift */; };
+		74DC98E025F9558C0008B291 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DC98DF25F9558C0008B291 /* String+Extension.swift */; };
+		74DC98E325F955ED0008B291 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DC98E225F955ED0008B291 /* LoginView.swift */; };
+		74DC98E625F956100008B291 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DC98E525F956100008B291 /* RegisterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +28,14 @@
 		74DC98BD25F954F80008B291 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		74DC98C025F954F80008B291 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		74DC98C225F954F80008B291 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74DC98CF25F955470008B291 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		74DC98D325F955530008B291 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		74DC98D625F955650008B291 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
+		74DC98D925F9556E0008B291 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		74DC98DC25F9557A0008B291 /* CustomAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlert.swift; sourceTree = "<group>"; };
+		74DC98DF25F9558C0008B291 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		74DC98E225F955ED0008B291 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		74DC98E525F956100008B291 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +69,10 @@
 			isa = PBXGroup;
 			children = (
 				74DC98B925F954F50008B291 /* Auth_Form_SwiftUI_versionApp.swift */,
-				74DC98BB25F954F50008B291 /* ContentView.swift */,
+				74DC98CB25F9550D0008B291 /* Extension */,
+				74DC98CD25F955170008B291 /* Model */,
+				74DC98C925F955030008B291 /* View */,
+				74DC98CE25F955200008B291 /* ViewModel */,
 				74DC98BD25F954F80008B291 /* Assets.xcassets */,
 				74DC98C225F954F80008B291 /* Info.plist */,
 				74DC98BF25F954F80008B291 /* Preview Content */,
@@ -67,6 +86,43 @@
 				74DC98C025F954F80008B291 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		74DC98C925F955030008B291 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				74DC98BB25F954F50008B291 /* ContentView.swift */,
+				74DC98E225F955ED0008B291 /* LoginView.swift */,
+				74DC98E525F956100008B291 /* RegisterView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		74DC98CB25F9550D0008B291 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				74DC98DF25F9558C0008B291 /* String+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		74DC98CD25F955170008B291 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				74DC98D925F9556E0008B291 /* User.swift */,
+				74DC98DC25F9557A0008B291 /* CustomAlert.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		74DC98CE25F955200008B291 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				74DC98CF25F955470008B291 /* UserViewModel.swift */,
+				74DC98D325F955530008B291 /* LoginViewModel.swift */,
+				74DC98D625F955650008B291 /* RegisterViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +194,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74DC98E025F9558C0008B291 /* String+Extension.swift in Sources */,
+				74DC98E625F956100008B291 /* RegisterView.swift in Sources */,
+				74DC98D425F955530008B291 /* LoginViewModel.swift in Sources */,
+				74DC98D725F955650008B291 /* RegisterViewModel.swift in Sources */,
+				74DC98E325F955ED0008B291 /* LoginView.swift in Sources */,
+				74DC98DA25F9556E0008B291 /* User.swift in Sources */,
 				74DC98BC25F954F50008B291 /* ContentView.swift in Sources */,
+				74DC98D025F955470008B291 /* UserViewModel.swift in Sources */,
 				74DC98BA25F954F50008B291 /* Auth_Form_SwiftUI_versionApp.swift in Sources */,
+				74DC98DD25F9557A0008B291 /* CustomAlert.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

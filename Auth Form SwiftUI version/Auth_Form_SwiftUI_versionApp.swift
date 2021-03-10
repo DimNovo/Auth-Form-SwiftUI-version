@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct Auth_Form_SwiftUI_versionApp: App {
+    @StateObject
+    private var userVM = UserViewModel()
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(userVM)
         }
     }
 }

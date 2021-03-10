@@ -1,6 +1,6 @@
 # Auth-Form-SwiftUI-version
 
-![Image](https://github.com/DimNovo/Auth-Form-SwiftUI/blob/main/Promo.png)
+![Image](https://github.com/DimNovo/Auth-Form-SwiftUI-version/blob/main/Promo.png)
 
 ## Description
 
